@@ -4,19 +4,135 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Mi página Web personal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/estilopersonal.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        <header>
-            <h1>MI PÁGINA WEB PERSONAL</h1>
-        </header>
-        <img src="foto.jpg">
-        <h2>Hola, soy Vilma García Chilón</h2>
-        <p>Estudiante de la carrera de Ingeniería de Sistemas de la <abbr title="Universidad Nacional de Cajamarca">UNC</abbr>, bienvenido a mi página web personal</p>
-        <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLgUkATaLHbnPNengrouAhHEMOiVwDEI9_Q&usqp=CAU">
-        <script src="" async defer></script>
+        <nav class = "navbar">
+            <div class = "max-width">
+                <div class = "logo"><a href="#">Mi Página <span>Web</span></a></div>
+            <ul class ="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <!--home section start-->
+        <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class = "text-1">Hola, mi nombre es</div>
+                <div class = "text-2">Vilma García</div>
+                <div class = "text-3">y soy estudiante de la <a href="https://www.unc.edu.pe/"><span> <abbr title="Universidad Nacional de Cajamarca">UNC</abbr></a> </span></div>
+            </div>
+        </div>
+        </section>
+
+        <!--about section start-->
+        <section class = "about" id="about">
+            <div class="max-width">
+                <h2 class ="title"> Más Sobre mi</h2>
+                <div class = "galeria">
+                    <div class ="imagen">
+                        <div class="text">Gocta</div>
+                        <img src="images/gocta.jpg">
+                    </div>
+                
+                    <div class ="imagen">
+                        <div class="text">Pacasmayo</div>
+                        <img src="images/pacasmayo.jpg">
+                        
+                    </div>
+                
+                    <div class ="imagen">
+                        <div class="text">Kuelap</div>
+                        <img src="images/kuelapc.jpg">
+                        
+                    </div>
+                
+                    <div class ="imagen">
+                        <div class="text">Porcon</div>
+                        <img src="images/porcon.jpg">
+                        
+                    </div>
+        
+                    <div class ="imagen">
+                        <br></br>
+                        <div class="text">caldo Verde</div>
+                        <img src="images/caldoverde.jpg">
+                        
+                    </div>
+                
+                    <div class ="imagen">
+                        <br></br>
+                        <div class="text">Aji de gallina</div>
+                        <img src="images/aji.jpg">
+                    </div>
+                
+                    <div class ="imagen">
+                        <br></br>
+                        <div class="text">Ceviche</div>
+                        <img src="images/ceviche.jpg">
+                    </div>
+                
+                    <div class ="imagen">
+                        <br></br>
+                        <div class="text">Lomo saltado</div>
+                        <img src="images/lomo.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--contact section --> 
+       <section class="contact" id="contact">
+       <div class="max-width">
+           <h2 class="title"> Contáctame</h2>
+           <div class="contact-content">
+                <div class="colum left">
+                    <div class ="text"> Ponerse en contacto</div>
+                    <p>Si deseas contactarme puedes hacerlo mediante: </p>
+                    <div class="icons">
+                        <div class="row">
+                            
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Vilma García</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Cajamarca, Perú</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">vgarciac15@unc.edu.pe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+       </div>
+    </section>
+       <!--Footer section-->
+       <footer>
+           <h3>Creado por <span>Vilma García</span>|© 2021 todos los derechos reservados.</h3>
+           
+       </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
