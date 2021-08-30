@@ -14,7 +14,7 @@
 .social{
     position: fixed;
     left: 0;
-    top: 200px;
+    top: 300px;
     z-index: 2000;
 }
 .social ul{
@@ -182,7 +182,7 @@ content: "Lugares visitados";
 
 /* contact section styling*/
 .contact{
-    color: #fff;
+    color: rgb(128, 117, 117);
     background: #111;
 }
 .contact .title::before{
