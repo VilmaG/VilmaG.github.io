@@ -37,6 +37,7 @@
     padding: 10px 30px;
     background:crimson;
 }
+
 /*navbar */
 .navbar{
     display: inline-block;
@@ -91,7 +92,7 @@
 .home{
     display: flex;
     background: #111;
-    height: 100vh;
+    height: 90vh;
     color: #fff;
     min-height: 500px;
     font-family: 'ubuntu',sans-serif;
@@ -123,7 +124,7 @@ font-size: 27px;
 
 /* about section styling*/
 section{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .about, .contact, .footer {
     font-family: 'Poppins',sans-serif;
@@ -184,6 +185,7 @@ content: "Lugares visitados";
 .contact{
     color: rgb(128, 117, 117);
     background: #111;
+    
 }
 .contact .title::before{
     background: #fff;
@@ -252,41 +254,3 @@ overflow: hidden;
     display: none;
 }
 
-/*responsive*/
-@media (max-width:947px){
-    .max-width{
-        padding: 0 50px;
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn{
-        color: #fff;
-        font-size: 23px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: 0;
-        top:0;
-        background: #1111;
-        text-align: center;
-        padding-top: 80px;
-    }
-    .navbar .menu active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    };
-}
