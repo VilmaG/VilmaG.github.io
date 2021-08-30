@@ -8,11 +8,52 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/estilopersonal.css">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="styles/bulma-carousel.min.css">
+    
+        <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css-awesome.min">
     </head>
     <body>
-        <nav class = "navbar">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class = "logo"><a href="#"><span>Mi Página Web</span></a></div>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item"> 
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Acerca de
+                </a>
+          
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Más
+                  </a>
+          
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--<nav class = "navbar is-danger " >
             <div class = "max-width">
                 <div class = "logo"><a href="#">Mi Página <span>Web</span></a></div>
             <ul class ="menu">
@@ -20,9 +61,21 @@
                 <li><a href="#about">Acerca de</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-        </nav>
+            </div>
+        </nav>-->
 
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/vilma.garciachilon" target="_blank" class="fab fa-facebook-square"></a> </li>
+                <li><a href="" target="_blank" class="fab fa-instagram-square"></a> </li>
+                <li><a href="mailto:vgarciac15@unc.edu.pe" target="_blank" class="fas fa-envelope-square"></a> </li>
+                
+            </ul>
+        </div>
+        
         <!--home section start-->
         <section class="home" id="home">
         <div class="max-width">
@@ -35,105 +88,179 @@
         </section>
 
         <!--about section start-->
-        <section class = "about" id="about">
-            <div class="max-width">
-                <h2 class ="title"> Más Sobre mi</h2>
-                <div class = "galeria">
-                    <div class ="imagen">
-                        <div class="text">Gocta</div>
-                        <img src="images/gocta.jpg">
-                    </div>
-                
-                    <div class ="imagen">
-                        <div class="text">Pacasmayo</div>
-                        <img src="images/pacasmayo.jpg">
-                        
-                    </div>
-                
-                    <div class ="imagen">
-                        <div class="text">Kuelap</div>
-                        <img src="images/kuelapc.jpg">
-                        
-                    </div>
-                
-                    <div class ="imagen">
-                        <div class="text">Porcon</div>
-                        <img src="images/porcon.jpg">
-                        
-                    </div>
-        
-                    <div class ="imagen">
-                        <br></br>
-                        <div class="text">caldo Verde</div>
-                        <img src="images/caldoverde.jpg">
-                        
-                    </div>
-                
-                    <div class ="imagen">
-                        <br></br>
-                        <div class="text">Aji de gallina</div>
-                        <img src="images/aji.jpg">
-                    </div>
-                
-                    <div class ="imagen">
-                        <br></br>
-                        <div class="text">Ceviche</div>
-                        <img src="images/ceviche.jpg">
-                    </div>
-                
-                    <div class ="imagen">
-                        <br></br>
-                        <div class="text">Lomo saltado</div>
-                        <img src="images/lomo.jpg">
-                    </div>
-                </div>
-            </div>
-        </section>
 
+        <section class = "about" id="about">
+                
+			<div class="container">
+                <h2 class ="title"> Más Sobre mi</h2>
+				<!-- Start Carousel -->
+				<div id="carousel-demo" class="carousel">
+					<div class="item-1">
+                        <p class="caption">
+                            Gocta
+                        </p>
+                        <img src="images/gocta.jpg">
+                        
+					</div>
+					<div class="item-2">
+                        <p class="caption">
+                            pacasmayo
+                        </p>
+						<img src="images/pacasmayo.jpg">
+					</div>
+					<div class="item-3">
+                        <p class="caption">
+                            Granja Porcon
+                        </p>
+						<img src="images/porcon.jpg">
+					</div>
+                    <div class="item-4">
+                        <p class="caption">
+                           Kuelap
+                        </p>
+						<img src="images/kuelapc.jpg">
+					</div>
+                    <div class="item-5">
+                        <p class="caption">
+                           CumbeMayo
+                        </p>
+						<img src="images/cumbemayo.jpg">
+					</div>
+                    
+				</div>
+				<!-- End Carousel -->
+                <div class="text"><h2 class="title"></h2></div>
+                
+                <div id="carousel-demo" class="carousel">
+					<div class="item-1">
+                        <p class="caption">
+                            Ceviche
+                        </p>
+                        <img src="images/ceviche.jpg">
+                        
+					</div>
+					<div class="item-2">
+                        <p class="caption">
+                           Aji de gallina
+                        </p>
+						<img src="images/aji.jpg">
+					</div>
+					<div class="item-3">
+                        <p class="caption">
+                            Lomo saltado
+                        </p>
+						<img src="images/lomo.jpg">
+					</div>
+                    <div class="item-4">
+                        <p class="caption">
+                            Caldo Verde
+                        </p>
+						<img src="images/caldoverde.jpg">
+					</div>
+                    
+				</div>
+			</div>
+		</section>
+                  
        <!--contact section --> 
        <section class="contact" id="contact">
        <div class="max-width">
            <h2 class="title"> Contáctame</h2>
            <div class="contact-content">
-                <div class="colum left">
+               
+                <div class="column left">
                     <div class ="text"> Ponerse en contacto</div>
                     <p>Si deseas contactarme puedes hacerlo mediante: </p>
                     <div class="icons">
                         <div class="row">
-                            
+                            <i class="fas fa-user"></i>
                             <div class="info">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Vilma García</div>
                             </div>
                         </div>
                         <div class="row">
-                            
+                            <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
                                 <div class="sub-title">Cajamarca, Perú</div>
                             </div>
                         </div>
-
                         <div class="row">
-                                
-                                <div class="info">
-                                    <div class="head">Email</div>
-                                    <div class="sub-title">vgarciac15@unc.edu.pe</div>
-                                </div>
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">vgarciac15@unc.edu.pe</div>
                             </div>
                         </div>
                     </div>
+                </div> 
+            
+                <div class="column right">
+                    <div class="text"> Mensaje</div>
+                    <div class="field">
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Name">
+                        </div>
+                      </div>
+                      
+                      <div class="field">    
+                        <div class="control has-icons-left has-icons-right">
+                          <input class="input is-danger" type="email" placeholder="Email" >
+                          <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </div>       
+                      </div>
+                      
+                      <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="subject">
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                          
+                      <div class="field is-grouped">
+                        <div class="control">
+                          <button class="button is-danger">Submit</button>
+                        </div>
+                        <div class="control">
+                          <button class="button is-link is-light">Cancel</button>
+                        </div>
+                      </div>
                 </div>
-            </div> 
-       </div>
-    </section>
+
+            </div>
+        </div>
+        
+      </section>
+      
        <!--Footer section-->
        <footer>
            <h3>Creado por <span>Vilma García</span>|© 2021 todos los derechos reservados.</h3>
            
        </footer>
 
-        <!--<script src="script.js"></script>-->
+       
+
+       <script src="https://kit.fontawesome.com/97c8f7f6bc.js" crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+        <script src ="js/bulma-carousel.min.js"></script>
+        
+        <script>
+            bulmaCarousel.attach('#carousel-demo', {
+                slidesToScroll: 1,
+                slidesToShow: 3
+            });
+            </script>
+
         <script src="" async defer></script>
     </body>
 </html>
+<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>-->

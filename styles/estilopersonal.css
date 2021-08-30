@@ -11,12 +11,39 @@
     padding: 0 80px;
     margin: auto;
 }
+.social{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.social ul li{
+    font-size: 25px;
+}
+.social ul li a:hover{
+    padding: 10px 30px;
+    background:crimson;
+}
 /*navbar */
 .navbar{
+    display: inline-block;
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 15px 0;
     font-family: 'Ubuntu',sans-serif;
     transition: all 0.3s ease;
 }
@@ -63,7 +90,7 @@
 /* home section styling*/
 .home{
     display: flex;
-    background: url("images/vil.jpg") no-repeat;
+    background: #111;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -131,8 +158,11 @@ section .title::after{
     transform: translate(-50%);
 }
 .about .title::after{
-content: "Lugares visitados y comidas favoritas";
+content: "Lugares visitados";
 }
+.about .text .title::after{
+    content: "platos favoritos";
+    }
 .galeria {
     display: flex;
     justify-content: space-evenly;
@@ -168,7 +198,7 @@ content: "Lugares visitados y comidas favoritas";
     align-items: center;
     justify-content: space-between;
 }
-.contact .contact-content .colum{
+.contact .contact-content .column{
     width: calc(50%-30px);
 }
 .contact .contact-content .text{
@@ -187,6 +217,14 @@ content: "Lugares visitados y comidas favoritas";
     height: 65px;
     align-items: center;
 }
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:crimson;
+}
+
 /*footer*/
 footer{
     background: #fff;
@@ -201,4 +239,54 @@ footer span {
 
 footer span:hover{
     text-decoration: underline;
+}
+/*carrusel*/
+.container{
+overflow: hidden;
+}
+/*menu boton*/
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/*responsive*/
+@media (max-width:947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn{
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top:0;
+        background: #1111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    };
 }
