@@ -27,4 +27,18 @@ function extraerDatos(){
     let btnExtraer = document.getElementById("extraer");
     btnExtraer.onclick = extraerDatos;
 
-    
+    function cambiar_color() {
+        let color1 = document.querySelectorAll(".azul");
+        color1.forEach(element => {
+            element.style.backgroundColor="chocolate";
+           
+        });
+
+        let color2 = document.querySelectorAll(".orange");
+        color2.forEach(element => {
+            element.style.backgroundColor="rgb(46, 58, 163)";
+             
+        });
+    }
+    let btnColorear = document.getElementById("colorear");
+    btnColorear.onclick = cambiar_color;
