@@ -26,3 +26,5 @@ function extraerDatos(){
 
     let btnExtraer = document.getElementById("extraer");
     btnExtraer.onclick = extraerDatos;
+
+    
