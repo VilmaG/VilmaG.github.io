@@ -89,8 +89,10 @@
 }
 
 /* home section styling*/
+
 .home{
     display: flex;
+    
     background: #111;
     height: 90vh;
     color: #fff;
