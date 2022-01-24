@@ -4,281 +4,29 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mi página Web personal</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/estilopersonal.css">
-   
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <link rel="stylesheet" href="styles/bulma-carousel.min.css">
-    
-        <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css-awesome.min">
+        <link rel="stylesheet" href="main.css">
     </head>
+
     <body>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <div class = "logo"><a href="#"><span>Mi Página Web</span></a></div>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
+        <div class="contenedor">
+        <h1>FACEBOOK</h1>
+        <form action="/register" method="POST">
+            <div class="section">               
+                <div class="field"><input type="text" id="username" name="username" placeholder="Correo electrónico o número de teléfono"></div>
             </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-end">
-                <a href="#index" class="navbar-item"> 
-                  Home
-                </a>
-          
-                <a href="#about" class="navbar-item">
-                  Acerca de
-                </a>
-                
-                <a href="#contact" class="navbar-item">
-                  Contacto
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    Más
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a href="lab05.html" class="navbar-item">
-                      Lab 05
-                    </a>
-                  </div>
-                </div>
-              </div>
-                  </div>
-                </div>
-              </div>
+            <div class="section">                
+                <div class="field"><input type="password" id="password" name="password" placeholder="Contraseña"></div>
             </div>
-          </nav>
-
-        <div class="social">
-            <ul>
-                <li><a href="https://www.facebook.com/vilma.garciachilon" target="_blank" class="fab fa-facebook-square"></a> </li>
-                <li><a href="" target="_blank" class="fab fa-instagram-square"></a> </li>
-                <li><a href="mailto:vgarciac15@unc.edu.pe" target="_blank" class="fas fa-envelope-square"></a> </li>
-                
-            </ul>
-        </div>
-        
-        <!--home section start-->
-        <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class = "text-1">Hola, mi nombre es</div>
-                <div class = "text-2">Vilma García</div>
-                <div class = "text-3">y soy estudiante de la <a href="https://www.unc.edu.pe/"><span> <abbr title="Universidad Nacional de Cajamarca">UNC</abbr></a> </span></div>
-            <p>Estudio la carrera de Ingeniería de Sistemas, actualmente tengo 23 años.</p>
+            <div class="section">
+                <div class="button"><input type="submit" value="Entrar"></div>
             </div>
-        </div>
-       
-
-        </section>
-
-        <!--about section start-->
-
-        <section class = "about" id="about">
-                
-			<div class="container">
-                <h2 class ="title"> Más Sobre mi</h2>
-				<!-- Start Carousel -->
-				<div id="carousel-demo" class="carousel">
-					<div class="item-1">
-                        <p class="caption">
-                            Gocta
-                        </p>
-                        <img src="images/gocta.jpg">
-                        
-					</div>
-					<div class="item-2">
-                        <p class="caption">
-                            pacasmayo
-                        </p>
-						<img src="images/pacasmayo.jpg">
-					</div>
-					<div class="item-3">
-                        <p class="caption">
-                            Granja Porcon
-                        </p>
-						<img src="images/porcon.jpg">
-					</div>
-                    <div class="item-4">
-                        <p class="caption">
-                           Kuelap
-                        </p>
-						<img src="images/kuelapc.jpg">
-					</div>
-                    <div class="item-5">
-                        <p class="caption">
-                           CumbeMayo
-                        </p>
-						<img src="images/cumbemayo.jpg">
-					</div>
-                    
-				</div>
-				<!-- End Carousel -->
-                <div class="text"><h2 class="title"></h2></div>
-                
-                <div id="carousel-demo" class="carousel">
-					<div class="item-1">
-                        <p class="caption">
-                            Ceviche
-                        </p>
-                        <img src="images/ceviche.jpg">
-                        
-					</div>
-					<div class="item-2">
-                        <p class="caption">
-                           Aji de gallina
-                        </p>
-						<img src="images/aji.jpg">
-					</div>
-					<div class="item-3">
-                        <p class="caption">
-                            Lomo saltado
-                        </p>
-						<img src="images/lomo.jpg">
-					</div>
-                    <div class="item-4">
-                        <p class="caption">
-                            Caldo Verde
-                        </p>
-						<img src="images/caldoverde.jpg">
-					</div>
-                    
-				</div>
-			</div>
-		</section>
-                  
-       <!--contact section --> 
-       <section class="contact" id="contact">
-       <div class="max-width">
-           <h2 class="title"> Contáctame</h2>
-           <div class="contact-content">
-               
-                <div class="column left">
-                    <div class ="text"> Ponerse en contacto</div>
-                    <p>Si deseas contactarme puedes hacerlo mediante: </p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Vilma García</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Cajamarca, Perú</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">vgarciac15@unc.edu.pe</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            
-                <div class="column right">
-                    <div class="text"> Mensaje</div>
-                    <div class="field">
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Name">
-                        </div>
-                      </div>
-                      
-                      <div class="field">    
-                        <div class="control has-icons-left has-icons-right">
-                          <input class="input is-danger" type="email" placeholder="Email" >
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-envelope"></i>
-                        </div>       
-                      </div>
-                      
-                      <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="subject">
-                          
-                        </div>
-                      </div>
-                      
-                      <div class="field">
-                        <div class="control">
-                          <textarea class="textarea" placeholder="Message"></textarea>
-                        </div>
-                      </div>
-                          
-                      <div class="field is-grouped">
-                        <div class="control">
-                          <button class="button is-danger">Submit</button>
-                        </div>
-                        <div class="control">
-                          <button class="button is-link is-light">Cancel</button>
-                        </div>
-                      </div>
-                </div>
-
-            </div>
-        </div>
-        
-      </section>
-      
-       <!--Footer section-->
-       <footer>
-           <h3>Creado por <span>Vilma García</span>|© 2021 todos los derechos reservados.</h3>
-           
-       </footer>
-
-       <script>
-           document.addEventListener('DOMContentLoaded', () => {
-
-           
-             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-           
-            if ($navbarBurgers.length > 0) {
-
-            
-            $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-
-            
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-    });
-  });
-}
-
-});
-       </script>
-
-       <script src="https://kit.fontawesome.com/97c8f7f6bc.js" crossorigin="anonymous"></script>
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <script src ="js/bulma-carousel.min.js"></script>
-        
-        <script>
-            bulmaCarousel.attach('#carousel-demo', {
-                slidesToScroll: 1,
-                slidesToShow: 3
-            });
-            </script>
-
-        <script src="" async defer></script>
+        </form>
+    </div>
+        <script src="index.js" async defer></script>
+        <script></script>
     </body>
 </html>
+
